@@ -25,8 +25,6 @@ class UserHome extends React.Component{
           const { setTasks } = this;
           axios.post("http://localhost:8080/api/user_task_list",this.state.data)
       .then(function (response){
-          console.log(response.data.response);
-          
         setTasks (response.data.response);
       })
       .catch(function(error){

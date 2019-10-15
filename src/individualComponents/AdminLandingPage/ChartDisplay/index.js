@@ -1,7 +1,9 @@
-import react from 'react';
- class ChartDisplay extends react.Component{
-    render(){
-        return(<div>h</div>);
-    }
+import React from 'react'
+
+const ChartDisplay = () => {
+    return (
+        <div id='container' />
+    )
 }
-export default ChartDisplay;
+
+export default ChartDisplay

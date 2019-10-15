@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LoginScreen from './individualComponents/LoginScreen'
 import UserHome from './individualComponents/UserHome'
 import AdminLandingPage from './individualComponents/AdminLandingPage'
-// import * as Highcharts from "highcharts";
-
 class App extends React.Component {
   state ={
     months: ['January', 'February', 'March', 'April', 'May', 'June',
@@ -58,10 +56,6 @@ class App extends React.Component {
     this.setState({
       selectedWeek
     })
-    try {
-      this.handleData(selectedWeek)
-    }
-    catch (error) { }
   }
   render(){
     const {months,weeks,selectedMonth,selectedWeek}=this.state;
